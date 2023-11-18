@@ -50,7 +50,7 @@
                 </li>
                 <li class="page">
                     <i class="fas fa-bell"></i>
-                    <a href="#">
+                    <a href="/home">
                         Уведомления
                     </a>
                 </li>
