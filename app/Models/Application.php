@@ -25,5 +25,15 @@ class Application extends Model
         return $this->belongsTo(Application_status_type::class, 'application_status_type_id', 'id');
     }
 
+    public function user()
+    {
+        return $this->belongsTo(User::class, 'user_id', 'id');
+    }
+
+    public function supply_chains()
+    {
+        return $this->belongsTo(Supply_chain::class, 'supply_chain_id', 'id');
+    }
+
 
 }

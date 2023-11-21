@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\SubSupplyChainController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -20,7 +21,10 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+//Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/home', [SubSupplyChainController::class, 'home'])->name('home');
+
 
 Route::get('/application', function() {
     return view('application');

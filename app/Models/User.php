@@ -56,4 +56,9 @@ class User extends Authenticatable
     {
         return $this->belongsTo(Role_type::class, 'role_type_id');
     }
+
+    public function applications()
+    {
+        return $this->hasMany(Application::class, 'application_id');
+    }
 }
